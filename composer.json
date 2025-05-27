@@ -1,0 +1,44 @@
+{
+    "keywords": [
+        "finance",
+        "math"
+    ],
+    "autoload" : {
+        "files" : [
+            "src/config/NamedConstant.php"
+        ],
+        "psr-4" : {
+            "rhossis\\Exception\\" : "src/Exception",
+            "rhossis\\mathfinance\\" : "src"
+        },
+        "psr-0" : {
+            "Pear" : "external/Pear"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "rhossis\\mathfinance\\tests\\" : "tests"
+        }
+    },
+    "name" : "rhossis/mathfinance",
+    "type" : "library",
+    "description" : "Package for financial math functions",
+    "license" : "New BSD License",
+    "require" : {
+        "php" : ">=7.4.0"
+    },
+    "require-dev" : {
+        "phpunit/phpunit" : "9.*"
+    },
+    "support" : {
+        "email" : "cogana@gmail.com",
+        "source" : "https://github.com/rhossis/mathfinance"
+    },
+    "authors" : [{
+        "name" : "Cyril Ogana",
+        "email" : "cogana@gmail.com",
+        "homepage" : "https://github.com/rhossis",
+        "role" : "Maintainer"        
+    }],
+    "homepage" : "https://github.com/rhossis/mathfinance"
+}
