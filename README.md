@@ -104,28 +104,29 @@ $interestFactor = $bondObj->accruedInterestFactor($dCM, $d1M1Y1, $d2M2Y2, $d3M3Y
 ### 🔢 Computing Financial Math
 
 ```php
-effectiveRate($nominal_rate, $npery);
-nominalRate($effect_rate, $npery);
-presentValue($rate, $nper, $pmt, $fv = 0, $type = 0);
-futureValue($rate, $nper, $pmt, $pv = 0, $type = 0);
-payment($rate, $nper, $pv, $fv = 0, $type = 0);
-periods($rate, $pmt, $pv, $fv = 0, $type = 0);
-rate($nper, $pmt, $pv, $fv = 0, $type = 0, $guess = 0.1);
-interestPayment($rate, $per, $nper, $pv, $fv = 0, $type = 0);
-principalPayment($rate, $per, $nper, $pv, $fv = 0, $type = 0);
-interestAndPrincipal($rate, $per, $nper, $pv, $fv, $type);
-netPresentValue($rate, $values);
-internalRateOfReturn($values, $guess = 0.1);
-modifiedInternalRateOfReturn($values, $finance_rate, $reinvest_rate);
-daysDifference($date1, $date2, $basis);
-daysPerYear($year, $basis);
-tBillYield($settlement, $maturity, $pr);
-tBillPrice($settlement, $maturity, $discount);
-tBillEquivalentYield($settlement, $maturity, $discount);
-discountRate($settlement, $maturity, $pr, $redemption, $basis = 0);
-priceDiscount($settlement, $maturity, $discount, $redemption, $basis = 0);
-depreciationFixedDeclining($cost, $salvage, $life, $period, $month = 12);
-depreciationStraightLine($cost, $salvage, $life);
+$mfo = new rhossis\mathfinance\MathFinance();
+$mfo->effectiveRate($nominal_rate, $npery);
+$mfo->nominalRate($effect_rate, $npery);
+$mfo->presentValue($rate, $nper, $pmt, $fv = 0, $type = 0);
+$mfo->futureValue($rate, $nper, $pmt, $pv = 0, $type = 0);
+$mfo->payment($rate, $nper, $pv, $fv = 0, $type = 0);
+$mfo->periods($rate, $pmt, $pv, $fv = 0, $type = 0);
+$mfo->rate($nper, $pmt, $pv, $fv = 0, $type = 0, $guess = 0.1);
+$mfo->interestPayment($rate, $per, $nper, $pv, $fv = 0, $type = 0);
+$mfo->principalPayment($rate, $per, $nper, $pv, $fv = 0, $type = 0);
+$mfo->interestAndPrincipal($rate, $per, $nper, $pv, $fv, $type);
+$mfo->netPresentValue($rate, $values);
+$mfo->internalRateOfReturn($values, $guess = 0.1);
+$mfo->modifiedInternalRateOfReturn($values, $finance_rate, $reinvest_rate);
+$mfo->daysDifference($date1, $date2, $basis);
+$mfo->daysPerYear($year, $basis);
+$mfo->tBillYield($settlement, $maturity, $pr);
+$mfo->tBillPrice($settlement, $maturity, $discount);
+$mfo->tBillEquivalentYield($settlement, $maturity, $discount);
+$mfo->discountRate($settlement, $maturity, $pr, $redemption, $basis = 0);
+$mfo->priceDiscount($settlement, $maturity, $discount, $redemption, $basis = 0);
+$mfo->depreciationFixedDeclining($cost, $salvage, $life, $period, $month = 12);
+$mfo->depreciationStraightLine($cost, $salvage, $life);
 ```
 
 ---
