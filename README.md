@@ -146,4 +146,4 @@ Unit tests are provided using PHPUnit.
 
 ### ⚖️ License
 
-**NEW BSD LICENSE**
+**BSD-3-Clause**

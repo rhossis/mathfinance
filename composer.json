@@ -23,7 +23,7 @@
     "name" : "rhossis/mathfinance",
     "type" : "library",
     "description" : "Package for financial math functions",
-    "license" : "New BSD License",
+    "license" : "BSD-3-Clause",
     "require" : {
         "php" : ">=7.4.0"
     },
